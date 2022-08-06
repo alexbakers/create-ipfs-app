@@ -1,0 +1,47 @@
+{
+  "name": "ipfs-scripts",
+  "version": "1.0.3",
+  "description": "Deploy scripts for Create IPFS App.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexbakers/create-ipfs-app",
+    "directory": "packages/ipfs-scripts"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/alexbakers/create-ipfs-app/issues"
+  },
+  "files": [
+    "bin",
+    "config",
+    "lib",
+    "scripts",
+    "utils",
+    "ipfs",
+    "moralis",
+    "infura",
+    "pinata"
+  ],
+  "bin": {
+    "ipfs-scripts": "./bin/ipfs-scripts.js"
+  },
+  "dependencies": {
+    "web3.storage": "^4.3.0",
+    "axios": "^0.27.2",
+    "dotenv": "^10.0.0",
+    "dotenv-expand": "^5.1.0",
+    "glob": "^8.0.3",
+    "react-dev-utils": "^12.0.1",
+    "gradient-string": "^2.0.1"
+  },
+  "keywords": [
+    "ipfs",
+    "moralis",
+    "web3",
+    "infura",
+    "pinata"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "create-ipfs-app-monorepo",
+  "version": "1.0.3",
+  "description": "Create IPFS App.",
+  "private": true,
+  "workspaces": [
+    "packages/create-ipfs-app",
+    "packages/ipfs-scripts"
+  ],
+  "scripts": {
+    "publish:create-ipfs-app": "cd packages/create-ipfs-app && npm publish",
+    "publish:ipfs-scripts": "cd packages/ipfs-scripts && npm publish"
+  }
+}
