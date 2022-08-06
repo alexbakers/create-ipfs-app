@@ -436,7 +436,6 @@ function run(
           Changed IPFS index page
         */
         setTimeout(function () {
-          fs.unlinkSync(path.join(process.cwd(), "package-lock.json"));
           replace.sync({
             files: path.join(process.cwd(), "package.json"),
             from: '"scripts": {',
