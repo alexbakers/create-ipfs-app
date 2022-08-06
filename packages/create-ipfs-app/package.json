@@ -1,6 +1,6 @@
 {
   "name": "create-ipfs-app",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "keywords": [
     "react",
     "ipfs",
@@ -23,6 +23,7 @@
     "url": "https://github.com/alexbakers/create-ipfs-app/issues"
   },
   "files": [
+    "public/*",
     "index.js",
     "createIpfsApp.js"
   ],
