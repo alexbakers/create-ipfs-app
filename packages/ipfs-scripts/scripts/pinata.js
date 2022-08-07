@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const web3 = require("web3.storage");
+const pinataSDK = require("@pinata/sdk");
 const gradient = require("gradient-string");
 
 // Makes the script crash on unhandled rejections instead of silently
@@ -55,19 +55,38 @@ function deployed() {
 }
 
 const upload = async () => {
-  const storage = new web3.Web3Storage({ token: process.env.WEB3 });
-  const files = await web3.getFilesFromPath(path.join(process.cwd(), "build"));
-  const cid = await storage.put(
-    files.map((f) => {
-      return { ...f, name: f.name.replace("/build", "") };
-    })
+  const pinata = pinataSDK(
+    process.env.PINATA.split(":")[0],
+    process.env.PINATA.split(":")[1]
   );
-  console.log("");
-  deployed();
-  console.log("");
-  console.log(gradient.cristal(`Brave Browser: ipfs://${cid}/`));
-  console.log("");
-  console.log(gradient.cristal(`ALL Browsers: https://dweb.link/ipfs/${cid}/`));
-  console.log("");
+  const options = {
+    pinataMetadata: {
+      name: "Create IPFS App [" + new Date().toISOString() + "]",
+    },
+    pinataOptions: {
+      cidVersion: 0,
+      wrapWithDirectory: false,
+    },
+  };
+  pinata
+    .pinFromFS(path.join(process.cwd(), "build"), options)
+    .then((result) => {
+      console.log("");
+      deployed();
+      console.log("");
+      console.log(
+        gradient.cristal(`Brave Browser: ipfs://${result.IpfsHash}/`)
+      );
+      console.log("");
+      console.log(
+        gradient.cristal(
+          `ALL Browsers: https://gateway.pinata.cloud/ipfs/${result.IpfsHash}/index.html`
+        )
+      );
+      console.log("");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 };
 upload();

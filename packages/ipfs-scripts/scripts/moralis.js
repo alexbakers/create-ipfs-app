@@ -104,10 +104,12 @@ glob(
               console.log("");
               deployed();
               console.log("");
-              console.log(gradient.cristal(`Brave Browser: ipfs://${cid}`));
+              console.log(gradient.cristal(`Brave Browser: ipfs://${cid}/`));
               console.log("");
               console.log(
-                gradient.cristal(`ALL Browsers: https://dweb.link/ipfs/${cid}`)
+                gradient.cristal(
+                  `ALL Browsers: https://ipfs.moralis.io/ipfs/${cid}/index.html`
+                )
               );
               console.log("");
             }

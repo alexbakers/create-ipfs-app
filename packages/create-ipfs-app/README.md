@@ -6,8 +6,9 @@
 
 Create IPFS apps with no build configuration (like create-react-app).
 
-<a href="https://web3.storage"><img alt="Web3.Storage" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/web3.png" width="8%" /></a>
-<a href="https://moralis.io"><img alt="Moralis.Io" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/moralis.png" width="10%" /></a>
+<a href="https://pinata.cloud"><img alt="Pinata.Cloud" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/pinata.png" width="65px" /></a>
+<a href="https://web3.storage"><img alt="Web3.Storage" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/web3.png" width="60px" /></a>
+<a href="https://moralis.io"><img alt="Moralis.Io" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/moralis.png" width="80px" /></a>
 
 Create IPFS App works on macOS, Windows, and Linux.<br>
 If something doesn’t work, please [file an issue](https://github.com/alexbakers/create-ipfs-app/issues/new).<br>
@@ -27,6 +28,13 @@ npx create-ipfs-app my-ipfs-app --web3 WEB3_STORAGE_API_TOKEN
 
 ```sh
 yarn create ipfs-app my-ipfs-app --moralis MORALIS_WEB3_API_KEY
+```
+
+### NPM
+
+```sh
+npm install -g create-ipfs-app
+create-ipfs-app my-ipfs-app --pinata PINATA_API_KEY:PINATA_API_SECRET
 ```
 
 <img alt="Create IPFS App Success" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/success.png" />
@@ -60,6 +68,7 @@ Your app is ready to be deployed.
 
 - `deploy:web3` - deploy to <a href="https://web3.storage">web3.storage</a>
 - `deploy:moralis` - deploy to <a href="https://moralis.io">moralis.io</a>
+- `deploy:pinata` - deploy to <a href="https://pinata.cloud">pinata.cloud</a>
 
 In a few seconds, your application will be deployed on the decentralized network.<br>
 
@@ -76,6 +85,6 @@ If you see a white screen instead of a website:
 
 - [x] web3.storage
 - [x] moralis.io
+- [x] pinata.cloud
 - [ ] infura.io
-- [ ] pinata.cloud
 - [ ] framework agnostic (vue, svelte, ...)

@@ -43,6 +43,7 @@ function init() {
       "specify a template for the created project"
     )
     .option("--moralis <api-key>", "moralis.io web3 api key")
+    .option("--pinata <api-key:api-secret>", "pinata.cloud api key:secret")
     .option("--web3 <api-token>", "web3.storage api token")
     .option("--use-pnp")
     .allowUnknownOption()
@@ -104,6 +105,9 @@ function init() {
   }
   if (program.moralis) {
     ipfs.push(`MORALIS="${program.moralis}"`);
+  }
+  if (program.pinata) {
+    ipfs.push(`PINATA="${program.pinata}"`);
   }
   if (program.web3) {
     ipfs.push(`WEB3="${program.web3}"`);
@@ -432,6 +436,7 @@ function run(
 
         /*
           Added script deploy:moralis
+          Added script deploy:pinata
           Added script deploy:web3
           Changed IPFS index page
         */
@@ -443,6 +448,7 @@ function run(
               '"scripts": {' +
               '\n    "predeploy": "npm run build",' +
               '\n    "deploy:moralis": "ipfs-scripts moralis",' +
+              '\n    "deploy:pinata": "ipfs-scripts pinata",' +
               '\n    "deploy:web3": "ipfs-scripts web3",',
           });
           replace.sync({
