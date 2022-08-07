@@ -107,9 +107,7 @@ glob(
               console.log(gradient.cristal(`Brave Browser: ipfs://${cid}/`));
               console.log("");
               console.log(
-                gradient.cristal(
-                  `ALL Browsers: https://ipfs.moralis.io/ipfs/${cid}/index.html`
-                )
+                gradient.cristal(`ALL Browsers: https://dweb.link/ipfs/${cid}/`)
               );
               console.log("");
             }

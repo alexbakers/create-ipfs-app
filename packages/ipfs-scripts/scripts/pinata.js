@@ -80,7 +80,7 @@ const upload = async () => {
       console.log("");
       console.log(
         gradient.cristal(
-          `ALL Browsers: https://gateway.pinata.cloud/ipfs/${result.IpfsHash}/index.html`
+          `ALL Browsers: https://dweb.link/ipfs/${result.IpfsHash}/`
         )
       );
       console.log("");
