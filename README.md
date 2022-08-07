@@ -1,13 +1,13 @@
 # Create IPFS App
 
-<img alt="Create IPFS App" src="public/create-ipfs-app.png" />
+<img alt="Create IPFS App" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/create-ipfs-app.png" />
 
-<img alt="IPFS" align="right" src="public/ipfs.svg" width="20%" />
+<img alt="IPFS" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/ipfs.svg" width="20%" />
 
 Create IPFS apps with no build configuration (like create-react-app).
 
-<a href="https://web3.storage"><img alt="Web3.Storage" align="right" src="public/web3.png" width="8%" /></a>
-<a href="https://moralis.io"><img alt="Moralis.Io" align="right" src="public/moralis.png" width="10%" /></a>
+<a href="https://web3.storage"><img alt="Web3.Storage" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/web3.png" width="8%" /></a>
+<a href="https://moralis.io"><img alt="Moralis.Io" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/moralis.png" width="10%" /></a>
 
 Create IPFS App works on macOS, Windows, and Linux.<br>
 If something doesn’t work, please [file an issue](https://github.com/alexbakers/create-ipfs-app/issues/new).<br>
@@ -29,7 +29,7 @@ npx create-ipfs-app my-ipfs-app --web3 WEB3_STORAGE_API_TOKEN
 yarn create ipfs-app my-ipfs-app --moralis MORALIS_WEB3_API_KEY
 ```
 
-<img alt="Create IPFS App Success" src="public/success.png" />
+<img alt="Create IPFS App Success" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/success.png" />
 
 Once the installation is done, you can open your project folder:
 
@@ -56,7 +56,7 @@ Your app is ready to be deployed.
 
 ### `npm run deploy:service` or `yarn deploy:service`
 
-<img alt="Create IPFS App Deployed" src="public/deployed.png" />
+<img alt="Create IPFS App Deployed" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/deployed.png" />
 
 - `deploy:web3` - deploy to <a href="https://web3.storage">web3.storage</a>
 - `deploy:moralis` - deploy to <a href="https://moralis.io">moralis.io</a>
