@@ -6,7 +6,7 @@
 
 Create IPFS apps with no build configuration (like create-react-app).
 
-<a href="https://pinata.cloud"><img alt="Pinata.Cloud" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/pinata.png" width="65px" /></a>
+<a href="https://pinata.cloud"><img alt="Pinata.Cloud" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/pinata.svg" width="65px" /></a>
 <a href="https://web3.storage"><img alt="Web3.Storage" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/web3.png" width="60px" /></a>
 <a href="https://moralis.io"><img alt="Moralis.Io" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/moralis.png" width="80px" /></a>
 
