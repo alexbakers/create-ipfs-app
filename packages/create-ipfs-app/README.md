@@ -81,6 +81,18 @@ If you see a white screen instead of a website:
 - Build the project;
 - Deploy it again.
 
+## How to add a deployment script to an existing project?
+
+- Install global package `ipfs-scripts`;
+- Create `.env` file at the root of project:
+  - `MORALIS="MORALIS.IO WEB3_API_KEY"`
+  - `PINATA="PINATA.CLOUD API_KEY:API_SECRET"`
+  - `WEB3="WEB3.STORAGE API_TOKEN"`
+- Add **scripts** to package.json:
+  - `"deploy:moralis": "ipfs-scripts moralis"`
+  - `"deploy:pinata": "ipfs-scripts pinata"`
+  - `"deploy:web3": "ipfs-scripts web3"`
+
 # TODO
 
 - [x] web3.storage
