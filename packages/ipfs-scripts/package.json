@@ -1,6 +1,6 @@
 {
   "name": "ipfs-scripts",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Deploy scripts for Create IPFS App.",
   "repository": {
     "type": "git",
