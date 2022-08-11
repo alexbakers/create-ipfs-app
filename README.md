@@ -100,3 +100,4 @@ If you see a white screen instead of a website:
 - [x] pinata.cloud
 - [ ] infura.io
 - [ ] framework agnostic (vue, svelte, ...)
+- [ ] auto-update CloudFlare DNS

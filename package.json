@@ -1,6 +1,6 @@
 {
   "name": "create-ipfs-app-monorepo",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Create IPFS App.",
   "private": true,
   "workspaces": [

@@ -57,11 +57,7 @@ function deployed() {
 const upload = async () => {
   const storage = new web3.Web3Storage({ token: process.env.WEB3 });
   const files = await web3.getFilesFromPath(path.join(process.cwd(), "build"));
-  const cid = await storage.put(
-    files.map((f) => {
-      return { ...f, name: f.name.replace("/build", "") };
-    })
-  );
+  const cid = await storage.put(files, { wrapWithDirectory: false });
   console.log("");
   deployed();
   console.log("");
