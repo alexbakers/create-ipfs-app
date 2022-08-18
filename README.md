@@ -98,6 +98,7 @@ If you see a white screen instead of a website:
 - [x] web3.storage
 - [x] moralis.io
 - [x] pinata.cloud
+- [ ] filebase.com
 - [ ] infura.io
 - [ ] framework agnostic (vue, svelte, ...)
 - [ ] auto-update CloudFlare DNS
