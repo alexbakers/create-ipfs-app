@@ -40,10 +40,10 @@ create-ipfs-app my-ipfs-app --pinata PINATA_API_KEY:PINATA_API_SECRET
 
 ## Params
 
-- --web3 WEB3_STORAGE_API_TOKEN
-- --moralis MORALIS_WEB3_API_KEY
-- --pinata PINATA_API_KEY:PINATA_API_SECRET
-- --filebase FILEBASE_API_KEY:FILEBASE_API_SECRET:FILEBASE_BUCKET_NAME
+- `--web3 WEB3_STORAGE_API_TOKEN`
+- `--moralis MORALIS_WEB3_API_KEY`
+- `--pinata PINATA_API_KEY:PINATA_API_SECRET`
+- `--filebase FILEBASE_API_KEY:FILEBASE_API_SECRET:FILEBASE_BUCKET_NAME`
 
 <img alt="Create IPFS App Success" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/success.png" />
 
