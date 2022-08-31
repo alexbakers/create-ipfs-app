@@ -557,6 +557,22 @@ function run(
             );
             console.log();
           }
+          if (ipfs.filter((s) => !!(s.indexOf("PINATA=") + 1)).length) {
+            console.log(
+              gradient.morning(
+                `  ${displayedCommand} ${useYarn ? "" : "run "}deploy:pinata`
+              )
+            );
+            console.log();
+          }
+          if (ipfs.filter((s) => !!(s.indexOf("FILEBASE=") + 1)).length) {
+            console.log(
+              gradient.morning(
+                `  ${displayedCommand} ${useYarn ? "" : "run "}deploy:filebase`
+              )
+            );
+            console.log();
+          }
           console.log(gradient.cristal("We suggest that you begin by typing:"));
           console.log();
           console.log(gradient.summer("  cd " + appName));

@@ -6,10 +6,10 @@
 
 Create IPFS apps with no build configuration (like create-react-app).
 
+<a href="https://filebase.com"><img alt="FileBase.Com" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/filebase.png" width="55px" /></a>
 <a href="https://web3.storage"><img alt="Web3.Storage" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/web3.png" width="50px" /></a>
 <a href="https://pinata.cloud"><img alt="Pinata.Cloud" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/pinata.svg" width="55px" /></a>
 <a href="https://moralis.io"><img alt="Moralis.Io" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/moralis.png" width="70px" /></a>
-<a href="https://filebase.com"><img alt="FileBase.Com" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/filebase.png" width="55px" /></a>
 
 Create IPFS App works on macOS, Windows, and Linux.<br>
 If something doesn’t work, please [file an issue](https://github.com/alexbakers/create-ipfs-app/issues/new).<br>
@@ -37,6 +37,13 @@ yarn create ipfs-app my-ipfs-app --moralis MORALIS_WEB3_API_KEY
 npm install -g create-ipfs-app
 create-ipfs-app my-ipfs-app --pinata PINATA_API_KEY:PINATA_API_SECRET
 ```
+
+## Params
+
+- --web3 WEB3_STORAGE_API_TOKEN
+- --moralis MORALIS_WEB3_API_KEY
+- --pinata PINATA_API_KEY:PINATA_API_SECRET
+- --filebase FILEBASE_API_KEY:FILEBASE_API_SECRET:FILEBASE_BUCKET_NAME
 
 <img alt="Create IPFS App Success" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/success.png" />
 
