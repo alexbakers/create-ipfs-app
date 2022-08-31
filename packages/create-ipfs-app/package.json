@@ -1,13 +1,14 @@
 {
   "name": "create-ipfs-app",
-  "version": "1.0.13",
+  "version": "1.1.0",
   "keywords": [
     "react",
     "ipfs",
     "moralis",
     "web3",
     "infura",
-    "pinata"
+    "pinata",
+    "filebase"
   ],
   "description": "Create IPFS apps with no build configuration.",
   "repository": {

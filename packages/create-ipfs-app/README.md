@@ -2,13 +2,14 @@
 
 <img alt="Create IPFS App" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/create-ipfs-app.png" />
 
-<img alt="IPFS" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/ipfs.svg" width="20%" />
+<img alt="IPFS" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/ipfs.svg" width="130px" />
 
 Create IPFS apps with no build configuration (like create-react-app).
 
-<a href="https://web3.storage"><img alt="Web3.Storage" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/web3.png" width="60px" /></a>
-<a href="https://pinata.cloud"><img alt="Pinata.Cloud" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/pinata.svg" width="65px" /></a>
-<a href="https://moralis.io"><img alt="Moralis.Io" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/moralis.png" width="80px" /></a>
+<a href="https://web3.storage"><img alt="Web3.Storage" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/web3.png" width="50px" /></a>
+<a href="https://pinata.cloud"><img alt="Pinata.Cloud" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/pinata.svg" width="55px" /></a>
+<a href="https://moralis.io"><img alt="Moralis.Io" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/moralis.png" width="70px" /></a>
+<a href="https://filebase.com"><img alt="FileBase.Com" align="right" src="https://raw.githubusercontent.com/alexbakers/create-ipfs-app/main/public/filebase.png" width="55px" /></a>
 
 Create IPFS App works on macOS, Windows, and Linux.<br>
 If something doesn’t work, please [file an issue](https://github.com/alexbakers/create-ipfs-app/issues/new).<br>
@@ -69,6 +70,7 @@ Your app is ready to be deployed.
 - `deploy:web3` - deploy to <a href="https://web3.storage">web3.storage</a>
 - `deploy:moralis` - deploy to <a href="https://moralis.io">moralis.io</a>
 - `deploy:pinata` - deploy to <a href="https://pinata.cloud">pinata.cloud</a>
+- `deploy:filebase` - deploy to <a href="https://filebase.com">filebase.com</a>
 
 In a few seconds, your application will be deployed on the decentralized network.<br>
 
@@ -88,17 +90,19 @@ If you see a white screen instead of a website:
   - `MORALIS="MORALIS.IO WEB3_API_KEY"`
   - `PINATA="PINATA.CLOUD API_KEY:API_SECRET"`
   - `WEB3="WEB3.STORAGE API_TOKEN"`
+  - `FILEBASE="FILEBASE.COM API_KEY:API_SECRET:BUCKET_NAME"`
 - Add **scripts** to package.json:
   - `"deploy:moralis": "ipfs-scripts moralis"`
   - `"deploy:pinata": "ipfs-scripts pinata"`
   - `"deploy:web3": "ipfs-scripts web3"`
+  - `"deploy:filebase": "ipfs-scripts filebase"`
 
 # TODO
 
 - [x] web3.storage
 - [x] moralis.io
 - [x] pinata.cloud
-- [ ] filebase.com
+- [x] filebase.com
 - [ ] infura.io
 - [ ] framework agnostic (vue, svelte, ...)
 - [ ] auto-update CloudFlare DNS

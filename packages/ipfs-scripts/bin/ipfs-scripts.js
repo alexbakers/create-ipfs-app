@@ -12,12 +12,12 @@ const spawn = require("react-dev-utils/crossSpawn");
 const args = process.argv.slice(2);
 
 const scriptIndex = args.findIndex(
-  (x) => x === "moralis" || x === "pinata" || x === "web3"
+  (x) => x === "filebase" || x === "moralis" || x === "pinata" || x === "web3"
 );
 const script = scriptIndex === -1 ? args[0] : args[scriptIndex];
 const nodeArgs = scriptIndex > 0 ? args.slice(0, scriptIndex) : [];
 
-if (["moralis", "pinata", "web3"].includes(script)) {
+if (["filebase", "moralis", "pinata", "web3"].includes(script)) {
   const result = spawn.sync(
     process.execPath,
     nodeArgs

@@ -45,6 +45,10 @@ function init() {
     .option("--moralis <api-key>", "moralis.io web3 api key")
     .option("--pinata <api-key:api-secret>", "pinata.cloud api key:secret")
     .option("--web3 <api-token>", "web3.storage api token")
+    .option(
+      "--filebase <api-key:api-secret:bucket-name>",
+      "filebase.com api key:secret:name"
+    )
     .option("--use-pnp")
     .allowUnknownOption()
     .on("--help", () => {
@@ -111,6 +115,9 @@ function init() {
   }
   if (program.web3) {
     ipfs.push(`WEB3="${program.web3}"`);
+  }
+  if (program.filebase) {
+    ipfs.push(`FILEBASE="${program.filebase}"`);
   }
 
   // We first check the registry directly via the API, and if that fails, we try
@@ -438,6 +445,7 @@ function run(
           Added script deploy:moralis
           Added script deploy:pinata
           Added script deploy:web3
+          Added script deploy:filebase
           Changed IPFS index page
         */
         setTimeout(function () {
@@ -449,7 +457,8 @@ function run(
               '\n    "predeploy": "npm run build",' +
               '\n    "deploy:moralis": "ipfs-scripts moralis",' +
               '\n    "deploy:pinata": "ipfs-scripts pinata",' +
-              '\n    "deploy:web3": "ipfs-scripts web3",',
+              '\n    "deploy:web3": "ipfs-scripts web3",' +
+              '\n    "deploy:filebase": "ipfs-scripts filebase",',
           });
           replace.sync({
             files: path.join(process.cwd(), "src", "App.css"),
