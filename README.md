@@ -110,6 +110,5 @@ If you see a white screen instead of a website:
 - [x] moralis.io
 - [x] pinata.cloud
 - [x] filebase.com
-- [ ] infura.io
 - [ ] framework agnostic (vue, svelte, ...)
 - [ ] auto-update CloudFlare DNS
