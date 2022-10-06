@@ -13,7 +13,7 @@ Create IPFS apps with no build configuration (like create-react-app).
 
 Create IPFS App works on macOS, Windows, and Linux.<br>
 If something doesn’t work, please [file an issue](https://github.com/alexbakers/create-ipfs-app/issues/new).<br>
-If you have questions or need help, please ask in [GitHub Discussions](https://github.com/alexbakers/create-ipfs-app/discussions).
+If you have questions or need help, please ask in [GitHub Discussions](https://github.com/alexbakers/create-ipfs-app/discussions).<br>
 If you want to watch the tutorial, go to [this video](https://vimeo.com/745362905).
 
 ## Quick Overview
