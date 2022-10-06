@@ -14,6 +14,7 @@ Create IPFS apps with no build configuration (like create-react-app).
 Create IPFS App works on macOS, Windows, and Linux.<br>
 If something doesn’t work, please [file an issue](https://github.com/alexbakers/create-ipfs-app/issues/new).<br>
 If you have questions or need help, please ask in [GitHub Discussions](https://github.com/alexbakers/create-ipfs-app/discussions).
+If you want to watch the tutorial, go to [this video](https://vimeo.com/745362905).
 
 ## Quick Overview
 
@@ -77,7 +78,7 @@ Your app is ready to be deployed.
 - `deploy:web3` - deploy to <a href="https://web3.storage">web3.storage</a>
 - `deploy:moralis` - deploy to <a href="https://moralis.io">moralis.io</a>
 - `deploy:pinata` - deploy to <a href="https://pinata.cloud">pinata.cloud</a>
-- `deploy:filebase` - deploy to <a href="https://filebase.com">filebase.com</a>
+- `deploy:filebase` - deploy to <a href="https://filebase.com">filebase.com</a> [<a href="https://docs.filebase.com/knowledge-base/web3-tutorials/create-ipfs-dapp">tutorial</a>]
 
 In a few seconds, your application will be deployed on the decentralized network.<br>
 
